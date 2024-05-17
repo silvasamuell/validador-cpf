@@ -1,13 +1,17 @@
 package app;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ValidadorCPF {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String cpf = "44536332898";
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o seu CPF (somente números)");
+		String cpf = entrada.next();
 		
 		int[] dividir = Arrays.stream(cpf.split("")).mapToInt(Integer::parseInt).toArray(); 
 		
@@ -41,6 +45,8 @@ public class ValidadorCPF {
 		} else {
 			System.out.println("CPF INVÁLIDO");
 		}
+		
+		entrada.close();
 	}
 
 }
