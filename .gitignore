@@ -1,5 +1,5 @@
-.settings
-bin
-.classpath
-.project
-src/module-info.java
+/.settings
+/bin
+/.classpath
+/.project
+/src/module-info.java
